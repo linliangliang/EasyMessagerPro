@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--登录界面-->
+    <color name="login_bg">#FFEFEFEF</color>
+    <color name="login_txt">#ff333333</color>
+
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="title_bg">#373B3E</color>
+    <color name="video_bg">#ededed</color>
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="action_text_color_normal">#cfcfcf</color>
+    <color name="action_text_color_enabled">#818585</color>
+    <color name="action_text_color_pressed">#353535</color>
+
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="refresh_head_bg">#2B2B2B</color>
+
+	<color name="praise_item">#8290AF</color>
+    <drawable name="semi_black">#80000000</drawable>
+	<color name="default_clickable_color">#cccccc</color>
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+    <color name="color_aeaeae">#aeaeae</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+
+    <color name="function_center_menu_selected">#e75c00</color>
+    <color name="function_center_menu_not_selected">#545e6a</color>
+    <color name="history_check_selected">#FF8000</color>
+    <color name="history_check_not_selected">#FFF</color>
+    <color name="history_check_not_selected2">#00000000</color>
+    <color name="send">#545e6a</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+	<color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+
+    <!-- <color name="white">#ffffff</color> -->
+    <color name="gridview_background_color">#f7e472</color>
+    <color name="province_bg">#8daac3</color>
+    <color name="province_bg_2">#ffffff</color>
+    <!-- <color name="red">#FFFF1826</color> -->
+
+    <!--林亮2018-11-22加：状态栏颜色，和顶部导航栏颜色-->
+    <color name="status_bar_bg">#0288D1</color>
+    <color name="navigation_bar_bg">#03A9F4</color>
+
+    <color name="button_notouch_bg">#448AFF</color>
+
+    <color name="text_bg">#03A9F4</color>
+
+    <color name="text_gray_bg">#707070</color>
+</resources>

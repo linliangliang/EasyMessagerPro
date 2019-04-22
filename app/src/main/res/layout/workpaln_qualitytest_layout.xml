@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView android:id="@+id/workplan_quality_workorderId_TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="工作单号："/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工序号：" />
+
+    <Spinner
+        android:id="@+id/workplan_quality_operationSeqID_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<TextView
+        android:id="@+id/workplan_quality_workcenterID_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作中心编号" />
+<TextView
+            android:id="@+id/workplan_quality_require_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需求数量" />
+<TextView
+            android:id="@+id/workplan_quality_done_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成数量" />
+<TextView
+            android:id="@+id/workplan_quality_donedate_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成日期" />
+<TextView
+            android:id="@+id/workplan_quality_people_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成人：" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定完成数量："/>
+    <EditText
+            android:id="@+id/workplan_quality_confirmdone_EditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:numeric="integer" />
+</LinearLayout>
+<Button
+        android:id="@+id/workplan_quality_submit_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="提交" />
+</LinearLayout>

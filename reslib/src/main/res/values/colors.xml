@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme">#125c99</color>
+
+    <color name="soft_black">#333333</color>
+
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="devide_line">#CBCED2</color>
+    <color name="gray_blue">#DDDDFF</color>
+    <color name="grays">#818181</color>
+    <color name="gray_font">#818181</color>
+    <color name="common_title">#18B4ED</color>
+
+    <color name="red">#FF0000</color>
+    <color name="backColor">#2000</color>
+    <color name="black">#000</color>
+    <color name="blue">#055EDD</color>
+    <color name="blue_purple">#0e20ca</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#EDEDED</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="yellow">#F99503</color>
+    <color name="item_back_press">#10000000</color>
+    <color name="orange">#ff9900</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+    <color name="white3">#EEEEFF</color>
+    <color name="darkgray">#4B4B4B</color>
+
+    <!-- <color name="transparent">#00000000</color> -->
+    <color name="main_top_color">#3996CE</color>
+    <!-- <color name="main_top_color">#f7614d</color> -->
+    <color name="main_top_tab_color">#bee2f8</color>
+    <!-- <color name="main_top_tab_color">#fcc9c5</color> -->
+    <color name="main_top_tab_color_2">#ffffff</color>
+    <color name="matrix_color">#ffffff</color>
+
+    <!--林亮2018-11-22加：状态栏颜色，和顶部导航栏颜色-->
+    <color name="status_bar_bg">#0288D1</color>
+    <color name="navigation_bar_bg">#03A9F4</color>
+    <color name="button_notouch_bg">#448AFF</color>
+
+<color name ="activity_background_gray">#EEEEEE</color>
+</resources>

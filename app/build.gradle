@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.zhengyuan.easymessengerpro"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 9
+        versionName "1.13"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+//            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+            // 指定应用启动后支持的native版本
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'//, 'mips', 'mips64'
+//            moduleName "daemon_one"
+        }
+    }
+
+    sourceSets.main {
+//        jni.srcDirs = ["src/main/jni"]//disable automatic ndk-build call
+        jniLibs.srcDir "jniLibs"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    externalNativeBuild {
+//        ndkBuild {
+//            path 'src/main/jni/Android.mk'
+//        }
+//    }
+//    externalNativeBuild {
+//        cmake {
+//            path 'CMakeLists.txt'
+//        }
+//    }
+}
+
+apply plugin: 'replugin-host-gradle'
+/**
+ * 配置项均为可选配置，默认无需添加
+ * 更多可选配置项参见replugin-host-gradle的RepluginConfig类
+ * 可更改配置项参见 自动生成RePluginHostConfig.java
+ */
+repluginHostConfig {
+//    /**
+//     * 是否使用 AppCompat 库
+//     * 不需要个性化配置时，无需添加
+//     */
+    useAppCompat = true
+    persistentEnable=false
+    // 设置为“不需要常驻进程”, "插件管理进程"为主进程
+    // 不设置此属性, 默认为":GuardService"进程为管理进程
+//    persistentEnable = false
+//    /**
+//     * 背景不透明的坑的数量
+//     * 不需要个性化配置时，无需添加
+//     */
+//    countNotTranslucentStandard = 6
+//    countNotTranslucentSingleTop = 2
+//    countNotTranslucentSingleTask = 3
+//    countNotTranslucentSingleInstance = 2
+}
+
+dependencies {
+
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+
+    compile 'com.qihoo360.replugin:replugin-host-lib:2.2.1'
+    compile('com.android.support:appcompat-v7:26.1.0')
+    compile('com.android.support:recyclerview-v7:26.1.0')
+    compile 'com.android.support:support-v4:26.1.0'
+
+    compile 'io.pristine:libjingle:9127@aar'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    //本地单元测试依赖
+    testImplementation 'junit:junit:4.12'
+    //裁剪图片
+    compile 'com.github.yalantis:ucrop:2.2.1'
+
+//    implementation 'com.pnikosis:materialish-progress:1.7'
+    compile('cn.pedant.sweetalert:library:1.2') {
+        //        exclude group: 'com.android.support', module: 'recyclerview-v7'
+//        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.nineoldandroids:library:2.4.0'
+//    compile 'com.malinskiy:superrecyclerview:1.1.4'
+//    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+// 这是cardView的依赖
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile project(':baselib')
+    compile project(':reslib')
+}

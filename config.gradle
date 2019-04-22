@@ -1,0 +1,20 @@
+
+ext {
+    // baselib库拷贝相关常量
+    libFromPath = 'build/outputs/jar/baselib.jar'
+    lib2PathPre = 'D:/AndroidStudioProjects/EMPluginProjects/'
+    lib2PathAf = '/app/libs'
+
+    // reslib库拷贝相关常量
+    resLibFromPath = 'build/outputs/aar/reslib-release.aar'
+    resLib2PathPre = 'D:/AndroidStudioProjects/EMPluginProjects/'
+    resLib2PathAf = '/app/libs'
+    resLibFromName = 'reslib-release.aar'
+    resLib2Name = 'reslib.aar'
+
+    pluginNames = ["EMChat", 'EMAttendance', 'EMWorkPlanShow', '..',
+                   'EMMessage', 'EMSendNotice', 'EMCarOnline', 'EMQRCode',
+                   'EMReportForms', 'EMPrisonLocation', 'EMEnterProcess',
+                   'EMSplitScan', 'EMProgramBurn', 'EMQualityInspection',
+                   "EMMaterialInfoUpdate"]
+}

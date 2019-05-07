@@ -493,6 +493,41 @@ public class FileManagerUtil {
     }
 
     /**
+     * 带进度条的文件上传
+     * @param file
+     * @param fileFormatName
+     * @param url
+     * @return
+     */
+    public static boolean uploadFileByUrlWithProgress(File file, String fileFormatName,
+                                          String url,final SocketHttpRequester.OnDownloadListener listener) {
+        Log.i(TAG, "upload start");
+        boolean uploadflag = false;
+        try {
+            String requestUrl = url;
+            // 请求普通信息
+            Map<String, String> params = new HashMap<String, String>();
+            params.put("username", EMProApplicationDelegate.userInfo.getUserId());
+
+            params.put("fileName", fileFormatName);
+            params.put("filefunction", "uploadImage");
+            // 上传文件
+            FormFile formfile = new FormFile(fileFormatName, file, "image",
+                    "application/octet-stream");
+            Log.i(TAG, "upload ready");
+            uploadflag = SocketHttpRequester.uploadFileWithProgress(requestUrl, params,
+                    new FormFile[]{formfile},listener);
+            Log.i(TAG, "upload success");
+        } catch (Exception e) {
+            Log.i(TAG, "upload error");
+            e.printStackTrace();
+            uploadflag = false;
+        }
+        Log.i(TAG, "upload end");
+        return uploadflag;
+    }
+
+    /**
      * @param file           文件
      * @param fileFormatName 从format中获取的文件名
      * @param filefunction   文件功能
